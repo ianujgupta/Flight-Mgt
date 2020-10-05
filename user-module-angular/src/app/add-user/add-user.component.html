@@ -1,6 +1,6 @@
 <form #form=ngForm (ngSubmit)="form.valid && addUser(form)">
 
-  <div class="form-group">
+  <!-- <div class="form-group">
       <label>User Type:</label>
       <input type="text" name="userType" required minlength="3" placeholder="enter user type" ngModel
           #userTypeCtrl=ngModel class="form-control">
@@ -10,7 +10,7 @@
   </div>
   <div *ngIf="userTypeCtrl.errors!=null && userTypeCtrl.errors.minlength" class="error">
       minlength is 3
-  </div>
+  </div> -->
 
 <div class="form-group">
   <label>User Name</label>

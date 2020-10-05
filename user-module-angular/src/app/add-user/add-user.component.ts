@@ -21,7 +21,7 @@ export class AddUserComponent  {
       let email= data.email;
       let password=data.password; 
       let phoneNumber=data.phoneNumber;
-    this.user = new User(userType, userName, email, password, phoneNumber);
+    this.user = new User("user", userName, email, password, phoneNumber);
     let successFun = (userArg: User) => {
       this.user = userArg;
     };
